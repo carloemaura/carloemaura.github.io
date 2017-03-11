@@ -1008,6 +1008,16 @@
 		left: 0;
 	}
 
+
+		#viewer div {
+
+    			height:100%;
+    			width:100%;
+    			font-size: 100%;
+   			overflow:scroll;
+			top: 10;
+    }
+
 		#viewer .inner {
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
