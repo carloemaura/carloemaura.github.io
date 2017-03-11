@@ -85,7 +85,6 @@
 	}
 
 	html, body {
-		-webkit-overflow-scrolling: touch
 		background-color: #101010;
 		overflow: scroll;
 	}
