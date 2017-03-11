@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("www.fontex.org/download/scriptina.ttf");
 
 /*
 	Lens by HTML5 UP
@@ -87,7 +88,7 @@
 	html, body {
 		-webkit-overflow-scrolling: touch
 		background-color: #101010;
-		overflow: scroll;
+		overflow: auto;
 	}
 
 /* Type */
@@ -250,6 +251,13 @@
 	.align-right {
 		text-align: right;
 	}
+
+.scrollabletextbox {
+    height:100px;
+    width:200px;
+    font-size: 82%;
+    overflow:scroll;
+    }
 
 /* Button */
 
@@ -743,7 +751,6 @@
 			background-size: 32px 32px;
 			cursor: pointer;
 			display: none;
-			overflow-y: auto;
 			z-index: 1;
 			background-position: 0.5em 0.5em;
 			left: 0;
@@ -811,11 +818,6 @@
 				}
 
 		}
-
-@font-face {
-  font-family: Scriptina;
-  src: url( "www.fontex.org/download/scriptina.ttf");
-}
 
 
 /* Header */
@@ -932,6 +934,7 @@
 
 		}
 
+
 /* Viewer */
 
 	@-moz-keyframes spinner {
@@ -999,16 +1002,33 @@
 	}
 
 	#viewer {
-		-moz-transition: opacity 0.75s ease, width 0.75s ease;
-		-webkit-transition: opacity 0.75s ease, width 0.75s ease;
-		-ms-transition: opacity 0.75s ease, width 0.75s ease;
-		transition: opacity 0.75s ease, width 0.75s ease;
-		position: absolute;
+		-moz-transition: opacity 0.75s ease, width 0.75s ease, visibility 0.75s;
+		-webkit-transition: opacity 0.75s ease, width 0.75s ease, visibility 0.75s;
+		-ms-transition: opacity 0.75s ease, width 0.75s ease, visibility 0.75s;
+		transition: opacity 0.75s ease, width 0.75s ease, visibility 0.75s;
+		-webkit-overflow-scrolling: touch;
+		position: fixed;
 		top: 0;
 		width: calc(100% - 22.5em);
 		height: 100%;
 		left: 0;
+		outline: 0;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		visibility: visible;
+		z-index: 10000;
 	}
+
+
+		#viewer div {
+
+    			height:100%;
+    			width:100%;
+    			font-size: 100%;
+   			overflow:scroll;
+			top: 10;
+    }
+
 
 		#viewer .inner {
 			-moz-pointer-events: none;
@@ -1098,6 +1118,7 @@
 			height: 100%;
 			opacity: 1;
 			z-index: 1;
+			overflow: auto;
 		}
 
 			#viewer .slide .caption {
