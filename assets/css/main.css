@@ -870,6 +870,16 @@
 		padding: 0 0.75em;
 	}
 
+
+		#thumbnails div {
+			top: 0;
+			width: 100%;
+			height: 100%;
+			font-size: 100%;
+			overflow-y: scroll;
+		}
+
+
 		#thumbnails article {
 			position: relative;
 			width: 50%;
@@ -1011,9 +1021,9 @@
 		#viewer div {
 			top: 0;
 			width: 100%;
-			height: 80%;
+			height: 100%;
 			font-size: 100%;
-			overflow-y: auto;
+			overflow-y: scroll;
 		}
 
 		#viewer .inner {
