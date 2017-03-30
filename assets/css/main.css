@@ -51,9 +51,9 @@
 /* Box Model */
 
 	*, *:before, *:after {
-		-moz-box-sizing: content-box;
-		-webkit-box-sizing: content-box;
-		box-sizing: content-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 /* Basic */
@@ -216,7 +216,7 @@
 	}
 
 	pre {
-		-webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: auto;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 1.25em 0;
