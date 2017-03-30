@@ -216,7 +216,7 @@
 	}
 
 	pre {
-		-webkit-overflow-scrolling: auto;
+		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 1.25em 0;
@@ -357,7 +357,6 @@
 
 	form {
 		margin: 0 0 1.25em 0;
-		overflow-y: scroll;
 	}
 
 	label {
@@ -386,6 +385,7 @@
 		padding: 0 0.75em;
 		text-decoration: none;
 		width: 100%;
+		overflow-y: scroll;
 	}
 
 		input[type="text"]:invalid,
