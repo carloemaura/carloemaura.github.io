@@ -1184,7 +1184,10 @@
 			}
 
 		body.fullscreen #viewer {
-			width: 100%;
+			-webkit-touch-overflow:scroll
+			width: 640px; 
+			height: 920px;
+			min-height: 101%;
 		}
 
 			body.fullscreen #viewer .inner .toggle {
